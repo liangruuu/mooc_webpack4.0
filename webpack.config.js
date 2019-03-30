@@ -16,9 +16,16 @@ module.exports = {
   },
   module: {
     rules: [{
-      test: /\.jpg$/,
+      test: /\.(jpg|png|gif)$/,
       use: {
-        loader: 'file-loader'
+        loader: 'url-loader',
+        options: {
+          // placeholder 占位符
+          name: '[name]_[hash].[ext]',
+          outputPath: 'images/',
+          // 如果图片小于超过2048kb就会使用url-loader方式打包，否则单独打包出一个图片文件
+          limit: 2048
+        }
       }
     }]
   },
