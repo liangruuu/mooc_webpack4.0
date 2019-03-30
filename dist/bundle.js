@@ -86,25 +86,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/content.js":
+/***/ "./src/avatar.jpg":
 /*!************************!*\
-  !*** ./src/content.js ***!
+  !*** ./src/avatar.jpg ***!
   \************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("function Content() {\r\n  let dom = document.getElementById(\"root\")\r\n  let content = document.createElement('div')\r\n  content.innerText = 'content'\r\n  dom.append(content)\r\n}\r\n\r\n// export default Content\r\nmodule.exports = Content\n\n//# sourceURL=webpack:///./src/content.js?");
-
-/***/ }),
-
-/***/ "./src/header.js":
-/*!***********************!*\
-  !*** ./src/header.js ***!
-  \***********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("function Header() {\r\n  let dom = document.getElementById(\"root\")\r\n  let header = document.createElement('div')\r\n  header.innerText = 'header'\r\n  dom.append(header)\r\n}\r\n\r\n// export default Header\r\nmodule.exports = Header\n\n//# sourceURL=webpack:///./src/header.js?");
+eval("module.exports = __webpack_require__.p + \"c6fe896239c722e99b89ab06ba0991e9.jpg\";\n\n//# sourceURL=webpack:///./src/avatar.jpg?");
 
 /***/ }),
 
@@ -112,21 +101,11 @@ eval("function Header() {\r\n  let dom = document.getElementById(\"root\")\r\n  
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("let Header = __webpack_require__(/*! ./header.js */ \"./src/header.js\")\r\nlet Content = __webpack_require__(/*! ./content.js */ \"./src/content.js\")\r\nlet Sidebar = __webpack_require__(/*! ./sidebar.js */ \"./src/sidebar.js\")\r\n\r\n\r\nnew Header()\r\nnew Content()\r\nnew Sidebar()  \n\n//# sourceURL=webpack:///./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/sidebar.js":
-/*!************************!*\
-  !*** ./src/sidebar.js ***!
-  \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("function Sidebar() {\r\n  let dom = document.getElementById(\"root\")\r\n  let sidebar = document.createElement('div')\r\n  sidebar.innerText = 'sidebar'\r\n  dom.append(sidebar)\r\n}\r\n\r\n// export default Sidebar\r\nmodule.exports = Sidebar\n\n//# sourceURL=webpack:///./src/sidebar.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _avatar_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./avatar.jpg */ \"./src/avatar.jpg\");\n/* harmony import */ var _avatar_jpg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_avatar_jpg__WEBPACK_IMPORTED_MODULE_0__);\n/**\r\n * CommonJS\r\n * let avatar = require('./avatar.jpg')\r\n */\r\n\r\n//ES6\r\n\r\n\r\nlet img = new Image()\r\n// avatar其实就是一个图片的地址\r\nimg.src = _avatar_jpg__WEBPACK_IMPORTED_MODULE_0___default.a\r\nlet root = document.getElementById(\"root\")\r\nroot.append(img)\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

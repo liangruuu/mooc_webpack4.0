@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/liangruuu/mooc_webpack4.0#readme",
   "devDependencies": {
+    "file-loader": "^3.0.1",
     "webpack-cli": "^3.3.0"
   },
   "dependencies": {
