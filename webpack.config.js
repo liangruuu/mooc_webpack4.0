@@ -27,6 +27,17 @@ module.exports = {
           limit: 2048
         }
       }
+    }, {
+      test: /\.scss$/,
+      use: ['style-loader',
+        {
+          loader: 'css-loader',
+          options: {
+            importLoaders: 2
+          }
+        },
+        'sass-loader'
+      ]
     }]
   },
   output: {
